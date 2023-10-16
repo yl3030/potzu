@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Tenor+Sans&display=swap");
 body {
   font-family: 'Tenor Sans', 'Noto Sans TC', sans-serif;
-  background-color: #010E3A;
+  background-color: #000825;
   color: #fff;
 }
 
@@ -23,16 +23,22 @@ a {
 }
 
 .main {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg3.png);
   background-size: 100%;
-  background-position: center top;
+  background-position: center -45%;
   background-repeat: no-repeat;
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .main {
-    background-image: url(../img/bg2.png);
+    background-position: center -30%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    background-position: center top;
   }
 }
 
@@ -143,7 +149,7 @@ a {
 @media screen and (max-width: 767px) {
   .title {
     font-size: 36px;
-    padding: 75vw 0 0;
+    padding: 45vw 0 0;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -159,7 +165,7 @@ a {
 }
 
 .link {
-  padding-top: 20vw;
+  padding-top: 16vw;
   padding-bottom: 45px;
   margin: 0 auto;
   width: 100%;
@@ -214,6 +220,12 @@ a {
   color: #4DDFFF;
 }
 
+@media screen and (max-width: 1700px) {
+  .link {
+    padding-top: 10vw;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .link > .container {
     max-width: inherit;
@@ -222,7 +234,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .link {
-    padding-top: 15vw;
+    padding-top: 7vw;
   }
   .link_item img {
     width: 90%;
